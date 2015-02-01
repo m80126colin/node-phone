@@ -10,6 +10,7 @@
 		"lib": "./lib"
 	},
 	"scripts": {
+		"dtest": "mocha --debug-brk --recursive -R spec",
 		"test": "mocha --recursive -R spec"
 	},
 	"repository": {

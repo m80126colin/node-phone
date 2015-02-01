@@ -345,6 +345,29 @@ describe('Testing MEX Phone', function() {
 
 });
 
+describe('Testing CHN Phone Quick Test', function() {
+
+	describe('Test 1', function() {
+                // landline
+		var number = ' +86 771 5864692',
+                    country = "China",
+			result = ['+867715864692', 'CN' ];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+	describe('Test 2', function() {
+debugger;
+                // mobile (internal)
+		var number = '139 771 02966',
+                    country = "CN",
+			result = ['+8613977102966', 'CHN' ];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+});
 
 describe('Testing HKG Phone Quick Test', function() {
 
