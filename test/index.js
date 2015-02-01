@@ -351,9 +351,9 @@ describe('Testing CHN Phone Quick Test', function() {
                 // landline
 		var number = ' +86 771 5864692',
                     country = "China",
-			result = ['+867715864692', 'CN' ];
+			result = ['+867715864692', 'CHN' ];
 		it('returns ' + result, function() {
-			phone(number, country).should.eql(result);
+			phone(number, country, {checkLength:false, checkIsMobile:false}).should.eql(result);
 		});
 	});
 	describe('Test 2', function() {
