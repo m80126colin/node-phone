@@ -1,7 +1,7 @@
 {
 	"name": "phone",
-	"version": "1.0.3.1",
-	"description": "With a given country and phone number, validate and format the phone number to E.164 standard",
+	"version": "1.0.4",
+	"description": "(WhalePath version)With a given country and phone number, validate and format the phone number to E.164 standard",
 	"main": "./lib/index",
 	"engines": {
 		"node": ">=0.8"
@@ -15,10 +15,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/aftership/node-phone"
+		"url": "https://github.com/whalepath/node-phone"
 	},
 	"bugs": {
-		"url": "https://github.com/aftership/node-phone/issues"
+		"url": "https://github.com/whalepath/node-phone/issues"
 	},
 	"devDependencies": {
 		"mocha": "latest",
@@ -27,6 +27,6 @@
 	"keywords": [
 		"phone", "e.164"
 	],
-	"author": "AfterShip",
+	"author": "AfterShip/WhalePath",
 	"license": "MIT"
 }
