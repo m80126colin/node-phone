@@ -1,1 +1,1 @@
-NodePhone = Npm.require('node-phone');
+NodePhone = Npm.require('phone');
