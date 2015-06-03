@@ -1,1 +1,0 @@
-NodePhone = Npm.require('phone');
