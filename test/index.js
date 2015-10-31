@@ -672,6 +672,29 @@ describe('Testing MEX Phone', function() {
 
 });
 
+describe('Testing CHN Phone Quick Test', function() {
+
+	describe('Test 1', function() {
+                // landline
+		var number = ' +86 771 5864692',
+                    country = "China",
+			result = ['+867715864692', 'CHN' ];
+		it('returns ' + result, function() {
+			phone(number, country, {checkLength:false, checkIsMobile:false}).should.eql(result);
+		});
+	});
+	describe('Test 2', function() {
+debugger;
+                // mobile (internal)
+		var number = '139 771 02966',
+                    country = "CN",
+			result = ['+8613977102966', 'CHN' ];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+});
 
 describe('Testing HKG Phone Quick Test', function() {
 
@@ -758,6 +781,65 @@ describe('Testing PRI Phone Quick Test', function() {
 	});
 });
 
+describe('Testing Guam Phone Quick Test', function() {
+	describe('Test 1', function() {
+		var number = '+1-671-488-1622',
+			country = 'GUM',
+			result = ['+16714881622', 'GUM'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test 2', function() {
+		var number = '16714881622',
+			country = 'GUM',
+			result = ['+16714881622', 'GUM'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test 3', function() {
+		var number = '6714881622',
+			country = 'GUM',
+			result = ['+16714881622', 'GUM'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+});
+
+describe('Testing VIR Phone Quick Test', function() {
+	describe('Test 1', function() {
+		var number = '+1-340.643.2400',
+			country = 'VIR',
+			result = ['+13406432400', 'VIR'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test 2', function() {
+		var number = '13406432400',
+			country = 'VIR',
+			result = ['+13406432400', 'VIR'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test 3', function() {
+		var number = '3406432400',
+			country = 'VIR',
+			result = ['+13406432400', 'VIR'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+});
+
+
 // input --> output
 // 89234567890, RUS --> +79234567890, RUS
 // +79234567890, RUS --> +79234567890, RUS
@@ -840,6 +922,55 @@ describe('Testing THA Phone Quick Test', function() {
 		var number = '812345678',
 			country = 'THA',
 			result = ['+66812345678', 'THA'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+});
+
+describe('Testing NPL Phone Quick Test', function() {
+
+	describe('Test NP 1', function() {
+		var number = '09812345678', // remove the leading 0
+			country = 'NPL',
+			result = ['+9779812345678', 'NPL'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test NP 2', function() {
+		var number = '09712345678', // remove the leading 0
+			country = 'NPL',
+			result = ['+9779712345678', 'NPL'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+
+	describe('Test NP 3', function() {
+		var number = '09612345678',
+			country = 'NPL',
+			result = ['+9779612345678', 'NPL'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+	
+	describe('Test NP 4', function() {
+		var number = '+9779812345678',
+			country = 'NPL',
+			result = ['+9779812345678', 'NPL'];
+		it('returns ' + result, function() {
+			phone(number, country).should.eql(result);
+		});
+	});
+	
+	describe('Test NP 5', function() {
+		var number = '9812345678',
+			country = 'NPL',
+			result = ['+9779812345678', 'NPL'];
 		it('returns ' + result, function() {
 			phone(number, country).should.eql(result);
 		});
