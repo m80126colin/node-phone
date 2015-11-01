@@ -15,10 +15,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/whalepath/node-phone"
+		"url": "https://github.com/m80126colin/node-phone"
 	},
 	"bugs": {
-		"url": "https://github.com/whalepath/node-phone/issues"
+		"url": "https://github.com/m80126colin/node-phone/issues"
 	},
 	"devDependencies": {
 		"mocha": "latest",
@@ -27,6 +27,6 @@
 	"keywords": [
 		"phone", "e.164"
 	],
-	"author": "AfterShip/WhalePath",
+	"author": "AfterShip/WhalePath/m80126colin",
 	"license": "MIT"
 }
